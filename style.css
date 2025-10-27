@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Russo One', sans-serif;
-  background-color: #1c1c1c; /* Fondo negro restaurado */
+  background-color: #1c1c1c;
   color: #f0eae2;
 }
 
@@ -23,7 +23,7 @@ div:first-child {
 .logo {
   width: 300px;
   display: block;
-  margin: 1rem auto;
+  margin: 1rem auto 0.5rem auto; /* Espacio ajustado */
   border: 4px solid #a04000;
   border-radius: 8px;
   box-shadow: 0 0 20px #5a2e0f;
@@ -33,7 +33,7 @@ div:first-child {
 header {
   text-align: center;
   background-color: #2e1d12;
-  padding: 1rem 0;
+  padding: 1rem 0 0.5rem 0; /* Espaciado ajustado */
 }
 
 header h1 {
@@ -45,14 +45,17 @@ header h1 {
 header p {
   font-size: 1rem;
   color: #cfcfcf;
+  margin-bottom: 0.5rem; /* Espaciado ajustado */
 }
 
+/* CAMBIO VISUAL: Navegación compacta como en la captura */
 nav {
-  margin-top: 1rem;
+  margin-top: 0;
+  padding-bottom: 1rem;
 }
 
 nav a {
-  margin: 0 1rem;
+  margin: 0 0.5rem; /* Espacio reducido entre enlaces */
   color: #ffa07a;
   text-decoration: none;
   font-weight: bold;
@@ -64,24 +67,31 @@ nav a:hover {
 
 /* Secciones */
 section {
-  padding: 2rem;
+  padding: 0.5rem 2rem; /* CAMBIO: Padding vertical muy reducido */
   max-width: 800px;
   margin: auto;
 }
 
-/* Ajuste de espaciado entre secciones */
+/* CAMBIO VISUAL: Reducir aún más el espacio entre bloques de texto */
 #integrantes {
-    margin-bottom: 0.5rem; 
+    padding-bottom: 0.5rem;
 }
 #ensayos {
-    padding-top: 1rem; 
+    padding-top: 0.5rem;
 }
-
+#fotos {
+    padding-top: 0.5rem;
+}
+#camisetas {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
 
 h2 {
   color: #ffcc70;
   border-bottom: 2px solid #a04000;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem; /* Espaciado ajustado */
+  margin-bottom: 0.5rem; /* Espaciado ajustado */
 }
 
 /* LISTAS */
@@ -91,7 +101,7 @@ ul {
 }
 
 li {
-  margin: 0.5rem 0;
+  margin: 0.3rem 0; /* Espaciado ajustado */
   font-size: 1.1rem;
 }
 
@@ -100,21 +110,21 @@ iframe {
   width: 100%;
   max-width: 560px;
   display: block;
-  margin: auto;
+  margin: 0.5rem auto; /* Espaciado ajustado */
 }
 
-/* GALERÍA DE FOTOS */
+/* GALERÍA DE FOTOS (más pequeñas) */
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Reducido a 150px de min-width */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
 
 .galeria img {
   width: 100%;
-  height: 150px; /* Tamaño fijo para las imágenes */
-  object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+  height: 150px; 
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -151,7 +161,7 @@ label {
   font-weight: bold;
 }
 
-input, select { /* Removido 'textarea' de aquí ya que lo eliminamos */
+input, select {
   padding: 0.6rem;
   border: none;
   border-radius: 5px;
@@ -179,10 +189,10 @@ button:hover {
   background-color: #ff5722;
 }
 
-/* --- ESTILOS PARA LA SECCIÓN DE ESTILO DE CAMISETA Y MODELO --- */
+/* ESTILOS ESPECÍFICOS DEL FORMULARIO */
 
-.estilo-camiseta, .opciones-modelo {
-    margin-top: 1rem;
+.opciones-modelo, .estilo-camiseta {
+    margin-top: 0.5rem;
     padding: 1rem;
     border: 1px solid #3b2a20; 
     border-radius: 5px;
@@ -225,9 +235,11 @@ button:hover {
     accent-color: #ff9f43; 
 }
 
-/* --- FIN DE ESTILOS DE FORMULARIO --- */
 
 /* CONTACTO */
+#contacto {
+    padding-top: 0.5rem; /* Espaciado ajustado */
+}
 a {
   color: #ffa07a;
 }
