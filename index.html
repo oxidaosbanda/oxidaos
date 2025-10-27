@@ -19,7 +19,7 @@
     <p>Banda de rock con sabor a carretera y óxido 🤘</p>
     <nav>
       <a href="#integrantes">Integrantes</a>
-      <a href="#ensayos">Ensayos</a>
+      <a href="#ensayos">Galería de Videos</a>
       <a href="#fotos">Fotos</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -37,7 +37,7 @@
   </section>
 
     <section id="ensayos">
-    <h2>Último ensayo</h2>
+    <h2>Galería de Videos</h2>
     <p>Un pequeño vistazo a lo que se viene...</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/avbhW1IbCNY"
       title="Presentación de Oxidaos" frameborder="0"
@@ -49,13 +49,13 @@
 <section id="fotos">
   <h2>Galería de fotos</h2>
   <div class="galeria">
-    <img src="img/foto_ensayo.jpg" alt="Ensayo del grupo">
+        <img src="img/foto_ensayo.jpg" alt="Ensayo del grupo"> 
     <img src="img/feria.jpg" alt="Concierto en la feria">
     <img src="img/refugio6.jpg" alt="Concierto en El Refugio">
 	<img src="img/refugio5.jpg" alt="Carlos Molero">
 	<img src="img/refugio3.jpg" alt="Deme Pradillo">
-	<img src="img/refugio2.jpg" alt="Miguel Laguzzi">
-	<img src="img/refugio.jpg" alt="Rik Cicuendez y Sebas Coronado">
+	<img src="img/refugio2.jpg" alt="Concierto en El Refugio">
+	<img src="img/refugio.jpg" alt="Concierto en El Refugio">
   </div>
 </section>
 
@@ -63,23 +63,37 @@
   <h2>Consigue tu camiseta de Oxidaos</h2>
   <p>Si quieres una camiseta oficial de <strong>Oxidaos</strong>, rellena este formulario y nos pondremos en contacto contigo.</p>
 
-  <form action="#" method="post">
+    <form action="mailto:oxidaosbanda@gmail.com" method="post" enctype="text/plain">
     <label for="nombre">Nombre completo:</label>
     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-    <label for="talla">Talla:</label>
+    <div class="opciones-modelo">
+        <label>Modelo:</label>
+        <div class="opciones-logo">
+            <label class="opcion-logo">
+                <input type="radio" name="modelo" value="chico" required>
+                Chico 👦
+            </label>
+            <label class="opcion-logo">
+                <input type="radio" name="modelo" value="chica">
+                Chica 👧
+            </label>
+        </div>
+    </div>
+        <label for="talla">Talla:</label>
     <select id="talla" name="talla" required>
       <option value="">Selecciona una talla</option>
       <option value="S">S</option>
       <option value="M">M</option>
       <option value="L">L</option>
       <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
     </select>
 
 	<div class="estilo-camiseta">
 		<label>Estilo de camiseta:</label>
-		<p class="nota-estilo">Elige el color del logo para tu camiseta negra.</p>
-		<img src="img/camisetas.jpg" alt="Camiseta Oxidaos" class="imagen-camiseta">
+		<p class="nota-estilo">Marca una casilla para el color de tu logo.</p>
+		<img src="img/camiseta_ejemplo.jpg" alt="Camiseta Oxidaos" class="imagen-camiseta">
 
 		<div class="opciones-logo">
 			<label class="opcion-logo">
@@ -95,10 +109,7 @@
 	    <label for="email">Correo electrónico:</label>
     <input type="email" id="email" name="email" placeholder="tuemail@gmail.com" required>
 
-    <label for="mensaje">Comentarios (opcional):</label>
-    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Color, diseño, etc."></textarea>
-
-    <button type="submit">Enviar solicitud</button>
+        <button type="submit">Enviar solicitud</button>
   </form>
 </section>
 
@@ -116,5 +127,3 @@
   </footer>
 </body>
 </html>
-
-
