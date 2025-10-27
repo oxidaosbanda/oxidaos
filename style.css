@@ -9,9 +9,7 @@ body {
 
 /* Franja superior */
 div:first-child {
-  background-image: url('logo.jpeg');
-  background-size: cover;
-  background-position: center;
+  background-color: #5b3b27; /* Marrón-óxido como en la captura */
   padding: 1.5rem;
   text-align: center;
   color: #fcead0;
@@ -272,3 +270,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
