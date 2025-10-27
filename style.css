@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Russo One', sans-serif;
-  background-color: #1c1c1c;
+  background-color: #1c1c1c; /* Fondo negro restaurado */
   color: #f0eae2;
 }
 
@@ -69,15 +69,12 @@ section {
   margin: auto;
 }
 
-/* * CAMBIO SOLICITADO: 
- * Reducir el espacio entre Quiénes Somos (#integrantes) y Galería de Videos (#ensayos).
- * Ajustando el margen inferior de #integrantes y el margen superior de #ensayos.
- */
+/* Ajuste de espaciado entre secciones */
 #integrantes {
-    margin-bottom: 0.5rem; /* Reducción de espacio */
+    margin-bottom: 0.5rem; 
 }
 #ensayos {
-    padding-top: 1rem; /* Reducción de espacio */
+    padding-top: 1rem; 
 }
 
 
@@ -109,14 +106,15 @@ iframe {
 /* GALERÍA DE FOTOS */
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Reducido a 150px de min-width */
   gap: 1rem;
   margin-top: 1rem;
 }
 
 .galeria img {
   width: 100%;
-  height: auto;
+  height: 150px; /* Tamaño fijo para las imágenes */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -153,7 +151,7 @@ label {
   font-weight: bold;
 }
 
-input, select, textarea {
+input, select { /* Removido 'textarea' de aquí ya que lo eliminamos */
   padding: 0.6rem;
   border: none;
   border-radius: 5px;
@@ -190,11 +188,10 @@ button:hover {
     border-radius: 5px;
 }
 
-/* CAMBIO SOLICITADO: Corregir el poco espacio del texto */
 .nota-estilo {
     font-size: 0.9rem;
-    margin-top: 0.5rem !important; /* Aumentamos el margen superior para separarlo de la etiqueta */
-    margin-bottom: 1rem !important; /* Añadimos espacio debajo para separarlo de la imagen */
+    margin-top: 0.5rem !important; 
+    margin-bottom: 1rem !important; 
     color: #a04000 !important;
 }
 
