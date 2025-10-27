@@ -271,3 +271,42 @@ footer {
   }
 }
 
+/* ======= GALERÍA / ÁLBUM ======= */
+.album {
+  position: relative;
+  max-width: 600px;
+  margin: 1rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.album button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(160,64,0,0.7);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.album button:hover {
+  background-color: rgba(255,87,34,0.9);
+}
+
+.album .prev { left: 10px; }
+.album .next { right: 10px; }
+
+
